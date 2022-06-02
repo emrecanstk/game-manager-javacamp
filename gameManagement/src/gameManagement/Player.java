@@ -5,18 +5,29 @@ public class Player {
 	String firstName;
 	String lastName;
 	String nickName;
+	int haveMoney;
 	int identificationNumber;
 	int birthYear;
 	
-	public Player(int id, String firstName, String lastName, String nickName, int identificationNumber, int birthYear) {
+	public Player(int id, String firstName, String lastName, String nickName, int haveMoney, int identificationNumber, int birthYear) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.nickName = nickName;
+		this.haveMoney = haveMoney;
 		this.identificationNumber = identificationNumber;
 		this.birthYear = birthYear;
 	}
-
+	
+	public void buyGame(Game game) {
+		System.out.println(this.nickName+" bought "+game.name+" for "+game.price+" liras.");
+		this.haveMoney = this.haveMoney - game.price;
+	}
+	
+	public int getHaveMoney() {
+		return haveMoney;
+	}
+	
 	public int getId() {
 		return id;
 	}

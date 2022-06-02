@@ -4,8 +4,8 @@ public class Game {
 	int id;
 	String name;
 	String companyName;
-	int price;
-	int hasDiscount=0;
+	public int price;
+	public int hasDiscount=0;
 	
 	public Game(int id, String name, String companyName, int price) {
 		super();

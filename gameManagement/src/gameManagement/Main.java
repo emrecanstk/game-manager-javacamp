@@ -3,6 +3,8 @@ package gameManagement;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		// Objects created for testing the code: 
 
 		LoggerInterface[] loggers = {new SmsLogger(), new EmailLogger(), new DataBaseLogger()};
 		
@@ -10,11 +12,11 @@ public class Main {
 		GameManager gameManager = new GameManager();
 		OfferManager offerManager = new OfferManager();
 		
-		Player emre = new Player(1, "Emre Can", "Satık", "emrecanwick", 1000120, 2002);
-		Player gulnur = new Player(2, "Gülnur", "Vırdınlı", "gvv", 1003500, 2001);
-		Player ercan = new Player(3, "Ercan", "Satık", "ercan71", 1001400, 1971);
-		Player melike = new Player(4, "Melike", "Satık", "melike155", 1780000, 1978);
-		Player aycan = new Player(5, "Aycan", "Satık", "Ican", 1000650, 1998);
+		Player emre = new Player(1, "Emre Can", "Satık", "emrecanwick", 850, 1000120, 2002);
+		Player gulnur = new Player(2, "Gülnur", "Vırdınlı", "gvv", 850, 1003500, 2001);
+		Player ercan = new Player(3, "Ercan", "Satık", "ercan71", 1800, 1001400, 1971);
+		Player melike = new Player(4, "Melike", "Satık", "melike155", 1200, 1780000, 1978);
+		Player aycan = new Player(5, "Aycan", "Satık", "Ican", 1000650, 700, 1998);
 		
 		Player[] players = {emre,gulnur,ercan,melike,aycan};
 		
@@ -30,6 +32,7 @@ public class Main {
 		Offer of3 = new Offer(3, 20);
 		
 		Offer[] offers = {of1,of2,of3};
+		
 	}
 
 }
