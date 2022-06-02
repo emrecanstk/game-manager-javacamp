@@ -1,16 +1,14 @@
 package gameManagement;
 
-public class GameManager implements GameInterface {
+public class GameManager {
 
-	@Override
 	public void add(Game game) {
-		// TODO Auto-generated method stub
+		System.out.println(game.name+" added on market.");
 		
 	}
 
-	@Override
 	public void delete(Game game) {
-		// TODO Auto-generated method stub
+		System.out.println(game.name+" deleted on market.");
 		
 	}
 
