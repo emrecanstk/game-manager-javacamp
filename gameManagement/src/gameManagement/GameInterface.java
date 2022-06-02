@@ -1,6 +1,6 @@
 package gameManagement;
 
-public class GameInterface {
+public interface GameInterface {
 	public void add(Game game);
 	public void delete(Game game);
 }
