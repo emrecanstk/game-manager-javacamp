@@ -16,20 +16,20 @@ public class Main {
 		Player melike = new Player(4, "Melike", "Satık", "melike155", 1780000, 1978);
 		Player aycan = new Player(5, "Aycan", "Satık", "Ican", 1000650, 1998);
 		
-		Player[] players = {};
+		Player[] players = {emre,gulnur,ercan,melike,aycan};
 		
 		Game gtaSa = new Game(1,"Grand Theft Auto: San Andreas","Rockstar Games",35);
 		Game mbw = new Game(2,"Mount and Blade: Warband","TaleWorlds",84);
 		Game gtaV = new Game(3, "Grand Theft Auto: V", "Rockstar Games", 210);
 		Game lol = new Game(4, "Leauge of Legends", "Riot Gmes", 0);
 		
-		Game[] games = {};
+		Game[] games = {gtaSa,mbw,gtaV,lol};
 		
 		Offer of1 = new Offer(1, 40);
 		Offer of2 = new Offer(2, 15);
 		Offer of3 = new Offer(3, 20);
 		
-		Offer[] offers = {};
+		Offer[] offers = {of1,of2,of3};
 	}
 
 }
