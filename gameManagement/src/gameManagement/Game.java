@@ -5,6 +5,7 @@ public class Game {
 	String name;
 	String companyName;
 	int price;
+	int hasDiscount=0;
 	
 	public Game(int id, String name, String companyName, int price) {
 		super();
