@@ -8,10 +8,10 @@ public class PlayerManager {
 	}
 	
 	public void save(Player player) {
-		Utils.runLoggers(loggers, player.getFirstName());
+		System.out.println(player.firstName+" added on system.");
 	}
 	
 	public void delete(Player player) {
-		
+		System.out.println(player.firstName+" deleted on system.");
 	}
 }
